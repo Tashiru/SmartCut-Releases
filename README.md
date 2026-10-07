@@ -4,16 +4,16 @@
 
 **Раскрой профильного металлопроката по STEP-моделям — от распознавания детали до готовой производственной карты.**
 
-[![Version](https://img.shields.io/badge/version-5.1.5-2563EB?style=for-the-badge)](https://github.com/Tashiru/SmartCut-Releases/releases/tag/v5.1.5-test)
+[![Version](https://img.shields.io/badge/version-5.1.6-2563EB?style=for-the-badge)](https://github.com/Tashiru/SmartCut-Releases/releases/tag/v5.1.6-test)
 ![Windows](https://img.shields.io/badge/Windows-x64-475569?style=for-the-badge&logo=windows11)
 ![Channel](https://img.shields.io/badge/channel-test-F59E0B?style=for-the-badge)
 
-### [Скачать SmartCut Pro 5.1.5](https://github.com/Tashiru/SmartCut-Releases/releases/tag/v5.1.5-test)
+### [Скачать SmartCut Pro 5.1.6](https://github.com/Tashiru/SmartCut-Releases/releases/tag/v5.1.6-test)
 
-[Установщик](https://github.com/Tashiru/SmartCut-Releases/releases/download/v5.1.5-test/SmartCut.Pro-test-Setup.exe) ·
-[Portable-версия](https://github.com/Tashiru/SmartCut-Releases/releases/download/v5.1.5-test/SmartCut.Pro-test-Portable.zip) ·
-[Android 0.1.7](https://github.com/Tashiru/SmartCut-Releases/releases/tag/android-v0.1.7-test) ·
-[Подробное описание обновления](https://github.com/Tashiru/SmartCut-Releases/releases/tag/v5.1.5-test)
+[Установщик](https://github.com/Tashiru/SmartCut-Releases/releases/download/v5.1.6-test/SmartCut.Pro-test-Setup.exe) ·
+[Portable-версия](https://github.com/Tashiru/SmartCut-Releases/releases/download/v5.1.6-test/SmartCut.Pro-test-Portable.zip) ·
+[Android 0.1.8](https://github.com/Tashiru/SmartCut-Releases/releases/tag/android-v0.1.8-test) ·
+[Подробное описание обновления](https://github.com/Tashiru/SmartCut-Releases/releases/tag/v5.1.6-test)
 
 </div>
 
@@ -40,7 +40,7 @@ SmartCut Pro — Windows-приложение для подготовки рас
 - настраиваемое управление и куб базовых и изометрических видов;
 - экспорт производственных карт и сводных данных в PDF;
 - сохранение проектов, автосохранение и восстановление работы;
-- локальный мобильный доступ с регистрацией и одобрением пользователей на ПК;
+- локальный мобильный доступ по QR с одобрением телефона и ролями пользователей;
 - автоматическая загрузка и установка обновлений.
 
 ## Поддерживаемые профили
@@ -55,29 +55,29 @@ SmartCut Pro — Windows-приложение для подготовки рас
 
 Для уголков и швеллеров SmartCut сохраняет физически допустимую ориентацию открытого сечения и не выполняет невозможные перевороты профиля внутри одного хлыста.
 
-## Что нового в версии 5.1.5
+## Что нового в версии 5.1.6
 
-Это парное тестовое обновление Windows 5.1.5 и [Android 0.1.7](https://github.com/Tashiru/SmartCut-Releases/releases/tag/android-v0.1.7-test). Оно добавляет локальные учётные записи для мобильного доступа; алгоритмы раскроя не изменились.
+Это парное тестовое обновление Windows 5.1.6 и [Android 0.1.8](https://github.com/Tashiru/SmartCut-Releases/releases/tag/android-v0.1.8-test). Алгоритмы раскроя не менялись.
 
-- При первом включении доступа с телефона создаётся администратор на ПК. Пользователь подаёт заявку на телефоне, а администратор одобряет, отзывает или удаляет её в окне «Пользователи и разрешения».
-- QR-код подтверждает ПК, но не открывает проекты без входа в одобренную учётную запись. Старые QR-токены доступа более не действуют.
-- Добавлены ограничение попыток входа, смена пароля, выход и немедленный отзыв пользовательских сеансов.
-- HTTPS-сервер слушает только локальный адрес и частные IPv4-адреса ПК. Внешний доступ через мобильную сеть пока не включён; порт на роутере открывать нельзя.
-- Подготовлен отдельный локальный просмотрщик сохранённых раскроев, который может работать после закрытия основного окна. Пока он запускается вручную и не принимает внешние подключения.
+- Отсканируйте QR — телефон подаст заявку автоматически. Администратор одобряет устройство в обновлённой панели, после чего гостевой просмотр загружается без повторного сканирования.
+- Регистрация и вход переехали во вкладку «Аккаунт». Есть роли администратора, конструктора, оператора и гостя; гость не может запускать расчёты. Администратор назначает роли на ПК.
+- Добавлены временный пароль по запросу, кодовая фраза восстановления администратора, удаление аккаунта и выбор «Запомнить вход».
+- Увеличенная карта хлыста перемещается плавнее. Мобильный 3D больше не подменяет отсутствующую STEP-геометрию с вырезами гладкой трубой: если точный 3D недоступен, показывается корректный 2D-чертёж.
+- HTTPS-сервер по-прежнему работает только в локальной сети. Внешний доступ через мобильную сеть не включён; порт на роутере открывать нельзя.
 
-Для проверки обновите **и ПК, и телефон**. После обновления создайте администратора на ПК, перезапустите SmartCut, заново отсканируйте QR на телефоне и войдите либо подайте заявку. Android 0.1.6 не умеет входить в новую систему аккаунтов.
+Для проверки обновите **и ПК, и телефон**. Подключение из Android 0.1.7 нужно забыть и выполнить QR-сопряжение заново. После одобрения телефона на ПК проекты появятся автоматически; роль можно получить через вкладку «Аккаунт».
 
-Полный список изменений находится на страницах [релиза Windows](https://github.com/Tashiru/SmartCut-Releases/releases/tag/v5.1.5-test) и [релиза Android](https://github.com/Tashiru/SmartCut-Releases/releases/tag/android-v0.1.7-test). Предыдущие версии доступны в [списке выпусков](https://github.com/Tashiru/SmartCut-Releases/releases).
+Полный список изменений находится на страницах [релиза Windows](https://github.com/Tashiru/SmartCut-Releases/releases/tag/v5.1.6-test) и [релиза Android](https://github.com/Tashiru/SmartCut-Releases/releases/tag/android-v0.1.8-test). Предыдущие версии доступны в [списке выпусков](https://github.com/Tashiru/SmartCut-Releases/releases).
 
 ## Установка
 
-1. Скачайте [`SmartCut.Pro-test-Setup.exe`](https://github.com/Tashiru/SmartCut-Releases/releases/download/v5.1.5-test/SmartCut.Pro-test-Setup.exe).
+1. Скачайте [`SmartCut.Pro-test-Setup.exe`](https://github.com/Tashiru/SmartCut-Releases/releases/download/v5.1.6-test/SmartCut.Pro-test-Setup.exe).
 2. Запустите установщик и завершите установку.
 3. Откройте SmartCut Pro через меню «Пуск» или ярлык на рабочем столе.
 
 Установщик предназначен для Windows x64 и включает необходимые компоненты приложения. При первом запуске Windows может показать стандартное предупреждение SmartScreen для нового неподписанного издателя.
 
-Для Android установите [SmartCut Mobile 0.1.7 APK](https://github.com/Tashiru/SmartCut-Releases/releases/download/android-v0.1.7-test/SmartCut.Mobile-0.1.7-test.apk) поверх прежней версии. Удалять 0.1.6 перед установкой не нужно. Установку APK из GitHub Android может потребовать подтвердить как установку из стороннего источника.
+Для Android установите [SmartCut Mobile 0.1.8 APK](https://github.com/Tashiru/SmartCut-Releases/releases/download/android-v0.1.8-test/SmartCut.Mobile-0.1.8-test.apk) поверх прежней версии. Удалять 0.1.7 перед установкой не нужно. Установку APK из GitHub Android может потребовать подтвердить как установку из стороннего источника.
 
 ## Автоматические обновления
 
@@ -91,7 +91,7 @@ SmartCut Pro — Windows-приложение для подготовки рас
 |---|---|
 | `SmartCut.Pro-test-Setup.exe` | Рекомендуемая установка с последующими автообновлениями |
 | `SmartCut.Pro-test-Portable.zip` | Ручной запуск без установки и автообновления |
-| `SmartCut.Mobile-0.1.7-test.apk` | Android-клиент для просмотра и управления раскроем в той же сети |
+| `SmartCut.Mobile-0.1.8-test.apk` | Android-клиент для просмотра и управления раскроем в той же сети |
 | `SmartCut.Pro-*-full.nupkg` | Полный пакет для механизма обновления Velopack |
 | `SmartCut.Pro-*-delta.nupkg` | Компактное обновление с предыдущей версии |
 | `releases.test.json` | Служебный индекс тестового канала обновлений |
@@ -100,7 +100,7 @@ SmartCut Pro — Windows-приложение для подготовки рас
 
 ## Статус версии
 
-SmartCut Pro 5.1.5 и SmartCut Mobile 0.1.7 распространяются через тестовый канал. Перед производственным использованием рекомендуется открыть несколько знакомых проектов, проверить распознанные размеры и визуально просмотреть 3D-карты. Для режима «Рез стыком» дополнительно проверьте длины фрагментов, положение отверстий и патронную зону.
+SmartCut Pro 5.1.6 и SmartCut Mobile 0.1.8 распространяются через тестовый канал. Перед производственным использованием рекомендуется открыть несколько знакомых проектов, проверить распознанные размеры и визуально просмотреть 3D-карты. Для режима «Рез стыком» дополнительно проверьте длины фрагментов, положение отверстий и патронную зону. APK ещё требует проверки запуска и плавности жестов на реальном телефоне.
 
 Если результат распознавания или раскроя выглядит неверно, сохраните исходный STEP и описание ожидаемого результата — это позволит воспроизвести и исправить конкретный случай.
 
