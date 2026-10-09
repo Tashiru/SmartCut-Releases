@@ -4,16 +4,16 @@
 
 **Раскрой профильного металлопроката по STEP-моделям — от распознавания детали до готовой производственной карты.**
 
-[![Version](https://img.shields.io/badge/version-5.1.10-2563EB?style=for-the-badge)](https://github.com/Tashiru/SmartCut-Releases/releases/tag/v5.1.10-test)
+[![Version](https://img.shields.io/badge/version-5.1.11-2563EB?style=for-the-badge)](https://github.com/Tashiru/SmartCut-Releases/releases/tag/v5.1.11-test)
 ![Windows](https://img.shields.io/badge/Windows-x64-475569?style=for-the-badge&logo=windows11)
 ![Channel](https://img.shields.io/badge/channel-test-F59E0B?style=for-the-badge)
 
-### [Скачать SmartCut Pro 5.1.10](https://github.com/Tashiru/SmartCut-Releases/releases/tag/v5.1.10-test)
+### [Скачать SmartCut Pro 5.1.11](https://github.com/Tashiru/SmartCut-Releases/releases/tag/v5.1.11-test)
 
-[Установщик](https://github.com/Tashiru/SmartCut-Releases/releases/download/v5.1.10-test/SmartCut.Pro-test-Setup.exe) ·
-[Portable-версия](https://github.com/Tashiru/SmartCut-Releases/releases/download/v5.1.10-test/SmartCut.Pro-test-Portable.zip) ·
+[Установщик](https://github.com/Tashiru/SmartCut-Releases/releases/download/v5.1.11-test/SmartCut.Pro-test-Setup.exe) ·
+[Portable-версия](https://github.com/Tashiru/SmartCut-Releases/releases/download/v5.1.11-test/SmartCut.Pro-test-Portable.zip) ·
 [Android 0.1.12](https://github.com/Tashiru/SmartCut-Releases/releases/tag/android-v0.1.12-test) ·
-[Подробное описание обновления](https://github.com/Tashiru/SmartCut-Releases/releases/tag/v5.1.10-test)
+[Подробное описание обновления](https://github.com/Tashiru/SmartCut-Releases/releases/tag/v5.1.11-test)
 
 </div>
 
@@ -55,7 +55,20 @@ SmartCut Pro — Windows-приложение для подготовки рас
 
 Для уголков и швеллеров SmartCut сохраняет физически допустимую ориентацию открытого сечения и не выполняет невозможные перевороты профиля внутри одного хлыста.
 
-## Что нового в версии 5.1.10
+## Что нового в версии 5.1.11
+
+Исправление ручного перетаскивания деталей в Windows:
+
+- Захват мыши проверяется до открытия плавающего превью детали.
+- При смене окна, Escape, удалении холста или потере захвата операция безопасно отменяется.
+- Пропущенное отпускание кнопки вне приложения обнаруживается резервной проверкой, работающей только во время перетаскивания.
+- Временное окно закрывается, исходные детали снова становятся видимыми; отмена не меняет раскрой.
+- Ошибки декоративного превью и системного переноса больше не должны аварийно закрывать приложение: они записываются в журнал.
+
+Алгоритмы расчёта, геометрия и формат проектов не менялись. Пройдено 244 теста ядра.
+Android остаётся на 0.1.12. Незавершённый производственный Viewer в этот релиз не включён.
+
+### Предыдущее обновление 5.1.10
 
 Это парное тестовое обновление Windows 5.1.10 и [Android 0.1.12](https://github.com/Tashiru/SmartCut-Releases/releases/tag/android-v0.1.12-test). Алгоритмы раскроя не менялись.
 
@@ -78,7 +91,7 @@ SmartCut Pro — Windows-приложение для подготовки рас
 
 ## Установка
 
-1. Скачайте [`SmartCut.Pro-test-Setup.exe`](https://github.com/Tashiru/SmartCut-Releases/releases/download/v5.1.10-test/SmartCut.Pro-test-Setup.exe).
+1. Скачайте [`SmartCut.Pro-test-Setup.exe`](https://github.com/Tashiru/SmartCut-Releases/releases/download/v5.1.11-test/SmartCut.Pro-test-Setup.exe).
 2. Запустите установщик и завершите установку.
 3. Откройте SmartCut Pro через меню «Пуск» или ярлык на рабочем столе.
 
@@ -107,7 +120,7 @@ SmartCut Pro — Windows-приложение для подготовки рас
 
 ## Статус версии
 
-SmartCut Pro 5.1.10 и SmartCut Mobile 0.1.12 распространяются через тестовый канал. Перед производственным использованием рекомендуется открыть несколько знакомых проектов, проверить распознанные размеры и визуально просмотреть 3D-карты. Для режима «Рез стыком» дополнительно проверьте длины фрагментов, положение отверстий и патронную зону. APK ещё требует проверки запуска и плавности жестов на реальном телефоне.
+SmartCut Pro 5.1.11 и SmartCut Mobile 0.1.12 распространяются через тестовый канал. Перед производственным использованием рекомендуется открыть несколько знакомых проектов, проверить распознанные размеры и визуально просмотреть 3D-карты. Для режима «Рез стыком» дополнительно проверьте длины фрагментов, положение отверстий и патронную зону. APK ещё требует проверки запуска и плавности жестов на реальном телефоне.
 
 Если результат распознавания или раскроя выглядит неверно, сохраните исходный STEP и описание ожидаемого результата — это позволит воспроизвести и исправить конкретный случай.
 
