@@ -4,16 +4,16 @@
 
 **Раскрой профильного металлопроката по STEP-моделям — от распознавания детали до готовой производственной карты.**
 
-[![Version](https://img.shields.io/badge/version-5.1.11-2563EB?style=for-the-badge)](https://github.com/Tashiru/SmartCut-Releases/releases/tag/v5.1.11-test)
+[![Version](https://img.shields.io/badge/version-5.1.12-2563EB?style=for-the-badge)](https://github.com/Tashiru/SmartCut-Releases/releases/tag/v5.1.12-test)
 ![Windows](https://img.shields.io/badge/Windows-x64-475569?style=for-the-badge&logo=windows11)
 ![Channel](https://img.shields.io/badge/channel-test-F59E0B?style=for-the-badge)
 
-### [Скачать SmartCut Pro 5.1.11](https://github.com/Tashiru/SmartCut-Releases/releases/tag/v5.1.11-test)
+### [Скачать SmartCut Pro 5.1.12](https://github.com/Tashiru/SmartCut-Releases/releases/tag/v5.1.12-test)
 
-[Установщик](https://github.com/Tashiru/SmartCut-Releases/releases/download/v5.1.11-test/SmartCut.Pro-test-Setup.exe) ·
-[Portable-версия](https://github.com/Tashiru/SmartCut-Releases/releases/download/v5.1.11-test/SmartCut.Pro-test-Portable.zip) ·
+[Установщик](https://github.com/Tashiru/SmartCut-Releases/releases/download/v5.1.12-test/SmartCut.Pro-test-Setup.exe) ·
+[Portable-версия](https://github.com/Tashiru/SmartCut-Releases/releases/download/v5.1.12-test/SmartCut.Pro-test-Portable.zip) ·
 [Android 0.1.12](https://github.com/Tashiru/SmartCut-Releases/releases/tag/android-v0.1.12-test) ·
-[Подробное описание обновления](https://github.com/Tashiru/SmartCut-Releases/releases/tag/v5.1.11-test)
+[Подробное описание обновления](https://github.com/Tashiru/SmartCut-Releases/releases/tag/v5.1.12-test)
 
 </div>
 
@@ -55,7 +55,28 @@ SmartCut Pro — Windows-приложение для подготовки рас
 
 Для уголков и швеллеров SmartCut сохраняет физически допустимую ориентацию открытого сечения и не выполняет невозможные перевороты профиля внутри одного хлыста.
 
-## Что нового в версии 5.1.11
+## Что нового в версии 5.1.12
+
+### Несколько длин хлыста у одного трубореза
+
+- В настройках станка вместо единственной длины — список размеров с добавлением и удалением (например, 9000, 10000 и 12000 мм).
+- В раскрываемой панели трубореза выбирается «Длина хлыста для этого раскроя, мм».
+- Размер сохраняется отдельно для каждого раскроя, включая раскрои сборки, и не меняет другие проекты. Сохранение `.smartcut`, ручное размещение, расчёт и PDF используют выбранную длину.
+- Смена рабочей длины помечает текущую карту для обновления, без скрытого пересчёта. Добавление/удаление размеров в справочнике готовый раскрой не трогает.
+- Удаление размера из профиля не подменяет длину в ранее сохранённых проектах; старые станки с одной длиной продолжают работать.
+- Повторные и некорректные значения не принимаются; длины должны превышать патронный остаток, а список не может быть пустым при сохранении.
+
+### Перетаскивание сразу, без лишнего клика
+
+- При выделенной одной детали другую можно сразу зажать и перенести на 2D-карте.
+- Синхронизация карточки детали перенесена на завершение жеста: обновление списка больше не пересоздаёт карту во время захвата мыши.
+- Одинарный клик по-прежнему выделяет деталь; исправление зависающего превью из 5.1.11 сохранено.
+
+Пройдено 244 теста ядра и 15 тестов приложения, включая сохранение независимых размеров в `.smartcut`. Жест проверен в работающем приложении.
+
+Обновляется только Windows, тестовый канал. Android остаётся на 0.1.12. Незавершённый производственный Viewer не включён.
+
+### Предыдущее обновление 5.1.11
 
 Исправление ручного перетаскивания деталей в Windows:
 
