@@ -63,7 +63,7 @@ SmartCut Pro — Windows-приложение для подготовки рас
 - Сервис включён в Pro; отдельный пробный конструктор не нужен. Viewer на этом же ПК → «Обновить задания». LAN пока не включён.
 - В EXE и ярлыки Pro встроен логотип SmartCut.
 - Для Windows 10 1903 x64: [Legacy-установщик 5.1.13](https://github.com/Tashiru/SmartCut-Releases/releases/download/v5.1.13-test/SmartCut-Setup-5.1.13-legacy-win10-x64.exe). Работа на устаревшей ОС требует проверки.
-- [Viewer 0.1.2 — отдельная ветка и релиз](https://github.com/Tashiru/SmartCut-Releases/tree/viewer), Android 0.1.12 не меняется.
+- [Viewer 0.1.3 — отдельная ветка и релиз](https://github.com/Tashiru/SmartCut-Releases/tree/viewer), Android 0.1.12 не меняется.
 
 ## Ранее: 5.1.12
 
@@ -160,3 +160,7 @@ SmartCut Pro 5.1.13 и SmartCut Mobile 0.1.12 распространяются �
 <div align="center">
   <sub>SmartCut Pro · STEP → раскрой → 3D-контроль → PDF</sub>
 </div>
+
+## Viewer 0.1.3 — обновление просмотра
+
+Отдельный канал Viewer: дерево проектов, раскроев и хлыстов, перелистывание, цветные карточки, подробности без редактирования и связанное выделение. Ветки подсвечиваются голубым при наведении и выборе; статусы проектов различаются цветами. SmartCut Pro 5.1.13 и Android 0.1.12 этим выпуском не меняются.
