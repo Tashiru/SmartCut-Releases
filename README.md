@@ -3,14 +3,14 @@
 Отдельная ветка **Viewer** для просмотра производственных заданий.
 Она не является каналом обновления основного SmartCut Pro или Android.
 
-## Скачать локальный пробник 0.1.1
+## Скачать локальный пробник 0.1.2
 
-- [Установщик Windows x64](https://github.com/Tashiru/SmartCut-Releases/releases/download/viewer-v0.1.1-test/SmartCut.Viewer-0.1.1-Setup-win-x64.exe)
-- [Portable Windows x64](https://github.com/Tashiru/SmartCut-Releases/releases/download/viewer-v0.1.1-test/SmartCut.Viewer-0.1.1-Portable-win-x64.zip)
-- [Подробное описание выпуска](https://github.com/Tashiru/SmartCut-Releases/releases/tag/viewer-v0.1.1-test)
+- [Установщик Windows x64](https://github.com/Tashiru/SmartCut-Releases/releases/download/viewer-v0.1.2-test/SmartCut.Viewer-0.1.2-Setup-win-x64.exe)
+- [Portable Windows x64](https://github.com/Tashiru/SmartCut-Releases/releases/download/viewer-v0.1.2-test/SmartCut.Viewer-0.1.2-Portable-win-x64.zip)
+- [Подробное описание выпуска](https://github.com/Tashiru/SmartCut-Releases/releases/tag/viewer-v0.1.2-test)
 - [Пошаговая инструкция](START-HERE.md)
 
-Windows 10 22H2 / Windows 11, x64. .NET входит в комплект.
+Установщик допускает Windows 10 1903 (18362) и новее / Windows 11, x64. .NET входит в комплект. На 1903 запуск ещё требует проверки: эта ОС вне официальной поддержки Microsoft. В 0.1.2 из пакетов убраны отладочные PDB, из Setup — дубли установочных компонентов.
 Установщик содержит подписанные Microsoft компоненты VC++ и WebView2;
 для загрузки WebView2 при установке может понадобиться Интернет.
 Само приложение пока не подписано сертификатом издателя.
