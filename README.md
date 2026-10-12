@@ -3,11 +3,11 @@
 Отдельная ветка **Viewer** для просмотра производственных заданий.
 Она не является каналом обновления основного SmartCut Pro или Android.
 
-## Скачать локальный пробник 0.1.0
+## Скачать локальный пробник 0.1.1
 
-- [Установщик Windows x64](https://github.com/Tashiru/SmartCut-Releases/releases/download/viewer-v0.1.0-test/SmartCut.Viewer-0.1.0-Setup-win-x64.exe)
-- [Portable Windows x64](https://github.com/Tashiru/SmartCut-Releases/releases/download/viewer-v0.1.0-test/SmartCut.Viewer-0.1.0-Portable-win-x64.zip)
-- [Подробное описание выпуска](https://github.com/Tashiru/SmartCut-Releases/releases/tag/viewer-v0.1.0-test)
+- [Установщик Windows x64](https://github.com/Tashiru/SmartCut-Releases/releases/download/viewer-v0.1.1-test/SmartCut.Viewer-0.1.1-Setup-win-x64.exe)
+- [Portable Windows x64](https://github.com/Tashiru/SmartCut-Releases/releases/download/viewer-v0.1.1-test/SmartCut.Viewer-0.1.1-Portable-win-x64.zip)
+- [Подробное описание выпуска](https://github.com/Tashiru/SmartCut-Releases/releases/tag/viewer-v0.1.1-test)
 - [Пошаговая инструкция](START-HERE.md)
 
 Windows 10 22H2 / Windows 11, x64. .NET входит в комплект.
@@ -42,11 +42,11 @@ Viewer не импортирует сборки, не пересчитывает
 **Важно: пока это локальный пробник на одном ПК, не LAN-сервер.**
 Подключение Viewer со второго ПК к первому ещё не включено.
 Не открывайте порт 5192: он должен слушать только 127.0.0.1.
-Обновление Viewer пока выполняется отдельным установщиком.
+Viewer проверяет обновления при запуске; вручную — кнопкой «Обновления Viewer». Скачивание с прогрессом и отменой, проверкой размера и SHA-256, установка после подтверждения. Только канал Viewer. 0.1.1 можно установить сразу, без 0.1.0. Для пользователей 0.1.0 переход на 0.1.1 один раз выполняется вручную.
 
 ## Проверки
 
-293 автоматических теста прошли: 244 ядра, 32 сервера, 17 приложения.
+Первый выпуск прошёл 293 теста. Для 0.1.1 повторно пройдены все 37 тестов сервера/обновления, включая 5 новых проверок выбора канала, загрузки и уборки кеша.
 Проверены публикация, неизменность оригинала, встроенный STEP, PDF,
 запрет устаревших карт, отсутствие дубля при повторной отправке,
 статусы/история после перезапуска. Карта, 2D, 3D и действия оператора
