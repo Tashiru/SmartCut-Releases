@@ -4,16 +4,16 @@
 
 **Раскрой профильного металлопроката по STEP-моделям — от распознавания детали до готовой производственной карты.**
 
-[![Version](https://img.shields.io/badge/version-5.1.13-2563EB?style=for-the-badge)](https://github.com/Tashiru/SmartCut-Releases/releases/tag/v5.1.13-test)
+[![Version](https://img.shields.io/badge/version-5.1.14-2563EB?style=for-the-badge)](https://github.com/Tashiru/SmartCut-Releases/releases/tag/v5.1.14-test)
 ![Windows](https://img.shields.io/badge/Windows-x64-475569?style=for-the-badge&logo=windows11)
 ![Channel](https://img.shields.io/badge/channel-test-F59E0B?style=for-the-badge)
 
-### [Скачать SmartCut Pro 5.1.13](https://github.com/Tashiru/SmartCut-Releases/releases/tag/v5.1.13-test)
+### [Скачать SmartCut Pro 5.1.14](https://github.com/Tashiru/SmartCut-Releases/releases/tag/v5.1.14-test)
 
-[Установщик](https://github.com/Tashiru/SmartCut-Releases/releases/download/v5.1.13-test/SmartCut.Pro-test-Setup.exe) ·
-[Portable-версия](https://github.com/Tashiru/SmartCut-Releases/releases/download/v5.1.13-test/SmartCut.Pro-test-Portable.zip) ·
+[Установщик](https://github.com/Tashiru/SmartCut-Releases/releases/download/v5.1.14-test/SmartCut.Pro-test-Setup.exe) ·
+[Portable-версия](https://github.com/Tashiru/SmartCut-Releases/releases/download/v5.1.14-test/SmartCut.Pro-test-Portable.zip) ·
 [Android 0.1.12](https://github.com/Tashiru/SmartCut-Releases/releases/tag/android-v0.1.12-test) ·
-[Подробное описание обновления](https://github.com/Tashiru/SmartCut-Releases/releases/tag/v5.1.13-test)
+[Подробное описание обновления](https://github.com/Tashiru/SmartCut-Releases/releases/tag/v5.1.14-test)
 
 </div>
 
@@ -55,14 +55,14 @@ SmartCut Pro — Windows-приложение для подготовки рас
 
 Для уголков и швеллеров SmartCut сохраняет физически допустимую ориентацию открытого сечения и не выполняет невозможные перевороты профиля внутри одного хлыста.
 
-## Что нового в версии 5.1.13
+## Что нового в версии 5.1.14
 
 ### Публикация для Viewer и иконка Pro
 
 - **Файл → Опубликовать на сервер…**: выберите сохранённый рассчитанный `.smartcut` и папку копии. Оригинал не меняется; создаются PDF, STEP и профильные карты.
 - Сервис включён в Pro; отдельный пробный конструктор не нужен. Viewer на этом же ПК → «Обновить задания». LAN пока не включён.
 - В EXE и ярлыки Pro встроен логотип SmartCut.
-- Для Windows 10 1903 x64: [Legacy-установщик 5.1.13](https://github.com/Tashiru/SmartCut-Releases/releases/download/v5.1.13-test/SmartCut-Setup-5.1.13-legacy-win10-x64.exe). Работа на устаревшей ОС требует проверки.
+- Для Windows 10 1903 x64: [Legacy-установщик 5.1.14](https://github.com/Tashiru/SmartCut-Releases/releases/download/v5.1.14-test/SmartCut-Setup-5.1.14-legacy-win10-x64.exe). Работа на устаревшей ОС требует проверки.
 - [Viewer 0.1.3 — отдельная ветка и релиз](https://github.com/Tashiru/SmartCut-Releases/tree/viewer), Android 0.1.12 не меняется.
 
 ## Ранее: 5.1.12
@@ -122,7 +122,7 @@ Android остаётся на 0.1.12. Незавершённый произво�
 
 ## Установка
 
-1. Скачайте [`SmartCut.Pro-test-Setup.exe`](https://github.com/Tashiru/SmartCut-Releases/releases/download/v5.1.13-test/SmartCut.Pro-test-Setup.exe).
+1. Скачайте [`SmartCut.Pro-test-Setup.exe`](https://github.com/Tashiru/SmartCut-Releases/releases/download/v5.1.14-test/SmartCut.Pro-test-Setup.exe).
 2. Запустите установщик и завершите установку.
 3. Откройте SmartCut Pro через меню «Пуск» или ярлык на рабочем столе.
 
@@ -151,7 +151,7 @@ Android остаётся на 0.1.12. Незавершённый произво�
 
 ## Статус версии
 
-SmartCut Pro 5.1.13 и SmartCut Mobile 0.1.12 распространяются через тестовый канал. Перед производственным использованием рекомендуется открыть несколько знакомых проектов, проверить распознанные размеры и визуально просмотреть 3D-карты. Для режима «Рез стыком» дополнительно проверьте длины фрагментов, положение отверстий и патронную зону. APK ещё требует проверки запуска и плавности жестов на реальном телефоне.
+SmartCut Pro 5.1.14 и SmartCut Mobile 0.1.12 распространяются через тестовый канал. Перед производственным использованием рекомендуется открыть несколько знакомых проектов, проверить распознанные размеры и визуально просмотреть 3D-карты. Для режима «Рез стыком» дополнительно проверьте длины фрагментов, положение отверстий и патронную зону. APK ещё требует проверки запуска и плавности жестов на реальном телефоне.
 
 Если результат распознавания или раскроя выглядит неверно, сохраните исходный STEP и описание ожидаемого результата — это позволит воспроизвести и исправить конкретный случай.
 
@@ -163,4 +163,12 @@ SmartCut Pro 5.1.13 и SmartCut Mobile 0.1.12 распространяются �
 
 ## Viewer 0.1.3 — обновление просмотра
 
-Отдельный канал Viewer: дерево проектов, раскроев и хлыстов, перелистывание, цветные карточки, подробности без редактирования и связанное выделение. Ветки подсвечиваются голубым при наведении и выборе; статусы проектов различаются цветами. SmartCut Pro 5.1.13 и Android 0.1.12 этим выпуском не меняются.
+Отдельный канал Viewer: дерево проектов, раскроев и хлыстов, перелистывание, цветные карточки, подробности без редактирования и связанное выделение. Ветки подсвечиваются голубым при наведении и выборе; статусы проектов различаются цветами. SmartCut Pro 5.1.14 и Android 0.1.12 этим выпуском не меняются.
+
+## Исправление STEP в Pro 5.1.14 и Viewer 0.1.3
+
+Открытые боковые вырезы больше не превращаются в ложные круглые отверстия и не смешиваются с торцевыми кольцами. Исправлены выбор информативного 2D-вида и отображение сквозных контуров в карте, SVG/PDF. Viewer также получил дерево проектов, страницы хлыстов, карточки и закрываемый 2D-просмотр.
+
+**Важно:** обновите ранее импортированную деталь из STEP, пересчитайте и сохраните проект, затем повторно опубликуйте задание для Viewer. Android 0.1.12 получает исправленные данные с ПК — новый APK не нужен. Пройдены 300 тестов; проверены присланный кронштейн, уголок, швеллер и круглая труба.
+
+[Pro 5.1.14](https://github.com/Tashiru/SmartCut-Releases/releases/tag/v5.1.14-test) · [Viewer 0.1.3](https://github.com/Tashiru/SmartCut-Releases/releases/tag/viewer-v0.1.3-test)
